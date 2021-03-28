@@ -12,7 +12,9 @@ public class AppConfig {
 
     @Bean(name="speakerService")
     // Single
-    @Scope(value= BeanDefinition.SCOPE_SINGLETON)
+   // @Scope(value= BeanDefinition.SCOPE_SINGLETON)
+    // for prototype
+    @Scope(value= BeanDefinition.SCOPE_PROTOTYPE)
     public SpeakerService getSpeakerService(){
         // example of setter injection setter pf bean
         //SpeakerServiceImpl service= new SpeakerServiceImpl();
