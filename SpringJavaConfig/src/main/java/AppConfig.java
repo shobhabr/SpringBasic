@@ -2,7 +2,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan({"com.shobha"})
+@ComponentScan({"com.javaconfig"})
 public class AppConfig {
 
    /* @Bean(name="speakerService")

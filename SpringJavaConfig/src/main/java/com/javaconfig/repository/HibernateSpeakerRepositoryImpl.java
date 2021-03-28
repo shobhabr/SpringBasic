@@ -13,8 +13,8 @@ public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
     public List<Speaker> findAll(){
         List<Speaker> speakers= new ArrayList<Speaker>();
         Speaker spk= new Speaker();
-        spk.setFirstName("Shobha");
-        spk.setLastName("Basavan");
+        spk.setFirstName("Java");
+        spk.setLastName("Config");
         speakers.add(spk);
         return speakers;
     }
