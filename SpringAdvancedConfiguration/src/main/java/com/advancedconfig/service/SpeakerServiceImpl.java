@@ -4,6 +4,7 @@ import com.advancedconfig.model.Speaker;
 import com.advancedconfig.repository.SpeakerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,7 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service("speakerService")
+@Profile("dev")//-Dspring.profiles.active=dev in vm
 public class SpeakerServiceImpl implements SpeakerService {
     @Autowired
     private SpeakerRepository repository;
