@@ -11,7 +11,9 @@ public class AppConfig {
     @Bean(name="speakerService")
     public SpeakerService getSpeakerService(){
         // example of setter injection setter pf bean
-        SpeakerServiceImpl service= new SpeakerServiceImpl();
+        //SpeakerServiceImpl service= new SpeakerServiceImpl();
+        // constructor injection
+        SpeakerServiceImpl service= new SpeakerServiceImpl(getSpeakerRepository());
         service.setRepository(getSpeakerRepository());
         return service;
     }
