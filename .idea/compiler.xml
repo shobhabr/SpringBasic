@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringJavaConfig" />
+        <module name="SpringAdvancedConfiguration" />
         <module name="SpringBasic_XML" />
       </profile>
     </annotationProcessing>
