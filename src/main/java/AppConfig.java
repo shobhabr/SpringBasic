@@ -4,13 +4,15 @@ import com.shobha.service.SpeakerService;
 import com.shobha.service.SpeakerServiceImpl;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
+@ComponentScan({"com.shobha"})
 public class AppConfig {
 
-    @Bean(name="speakerService")
+   /* @Bean(name="speakerService")
     // Single
     @Scope(value= BeanDefinition.SCOPE_SINGLETON)
     // for prototype
@@ -19,15 +21,16 @@ public class AppConfig {
         // example of setter injection setter pf bean
         //SpeakerServiceImpl service= new SpeakerServiceImpl();
         // constructor injection
-        SpeakerServiceImpl service= new SpeakerServiceImpl(getSpeakerRepository());
-        service.setRepository(getSpeakerRepository());
+        //SpeakerServiceImpl service= new SpeakerServiceImpl(getSpeakerRepository());
+        //service.setRepository(getSpeakerRepository());
+        SpeakerServiceImpl service= new SpeakerServiceImpl();
         return service;
     }
 
     @Bean(name="speakerRepository")
     public SpeakerRepository getSpeakerRepository(){
         return new HibernateSpeakerRepositoryImpl();
-    }
+    }*/
 
 
 
