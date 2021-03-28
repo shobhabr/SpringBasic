@@ -11,33 +11,30 @@ import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service("speakerService")
-@Scope(value= BeanDefinition.SCOPE_PROTOTYPE)
 public class SpeakerServiceImpl implements SpeakerService {
     @Autowired
     private SpeakerRepository repository;
 
-    public SpeakerServiceImpl(){
-        System.out.println("SpeakerService No arg Constructor ");
+    public SpeakerServiceImpl() {
+        System.out.println("SpeakServiceImpl no args constructor");
     }
 
-    public SpeakerServiceImpl(SpeakerRepository speakerRepository){
-        System.out.println("SpeakerRepository Constructor ");
-        repository=speakerRepository;
-    }
-  @PostConstruct
-    private void initialize(){
-        System.out.println("called after no arg constructor");
+    public SpeakerServiceImpl (SpeakerRepository speakerRepository) {
+        System.out.println("SpeakServiceImpl repository constructor");
+        repository = speakerRepository;
     }
 
+    @PostConstruct
+    private void initialize() {
+        System.out.println("We're called after the constructors");
+    }
 
-    public List<Speaker>  findAll(){
+    public List<Speaker> findAll() {
         return repository.findAll();
     }
 
-    // for setter injection
-
     public void setRepository(SpeakerRepository repository) {
-        System.out.println("SpeakerService Setter ");
+        System.out.println("SpeakServiceImpl setter");
         this.repository = repository;
     }
 }
