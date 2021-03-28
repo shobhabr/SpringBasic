@@ -1,0 +1,26 @@
+import com.shobha.repository.HibernateSpeakerRepositoryImpl;
+import com.shobha.repository.SpeakerRepository;
+import com.shobha.service.SpeakerService;
+import com.shobha.service.SpeakerServiceImpl;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+
+    @Bean(name="speakerService")
+    public SpeakerService getSpeakerService(){
+        // example of setter injection setter pf bean
+        SpeakerServiceImpl service= new SpeakerServiceImpl();
+        service.setRepository(getSpeakerRepository());
+        return service;
+    }
+
+    @Bean(name="speakerRepository")
+    public SpeakerRepository getSpeakerRepository(){
+        return new HibernateSpeakerRepositoryImpl();
+    }
+
+
+
+}
