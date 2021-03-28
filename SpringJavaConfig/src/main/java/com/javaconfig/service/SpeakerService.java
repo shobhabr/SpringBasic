@@ -1,6 +1,6 @@
-package com.shobha.service;
+package com.javaconfig.service;
 
-import com.shobha.model.Speaker;
+import com.javaconfig.model.Speaker;
 
 import java.util.List;
 

@@ -1,13 +1,12 @@
-package com.shobha.service;
+package com.xmlconfig.service;
 
-import com.shobha.model.Speaker;
-import com.shobha.repository.HibernateSpeakerRepositoryImpl;
-import com.shobha.repository.SpeakerRepository;
+import com.xmlconfig.model.Speaker;
+import com.xmlconfig.repository.SpeakerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service("speakerService")
 public class SpeakerServiceImpl implements SpeakerService {
 

@@ -1,15 +1,8 @@
-import com.shobha.repository.HibernateSpeakerRepositoryImpl;
-import com.shobha.repository.SpeakerRepository;
-import com.shobha.service.SpeakerService;
-import com.shobha.service.SpeakerServiceImpl;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
 
 @Configuration
-@ComponentScan({"com.shobha"})
+@ComponentScan({"com.xmlconfig"})
 public class AppConfig {
 
    /* @Bean(name="speakerService")

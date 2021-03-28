@@ -1,10 +1,11 @@
-package com.shobha.repository;
+package com.xmlconfig.repository;
 
-import com.shobha.model.Speaker;
+import com.xmlconfig.model.Speaker;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Repository("speakerRepository")
 public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
 

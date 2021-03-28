@@ -1,6 +1,6 @@
-package com.shobha.repository;
+package com.xmlconfig.repository;
 
-import com.shobha.model.Speaker;
+import com.xmlconfig.model.Speaker;
 
 import java.util.List;
 

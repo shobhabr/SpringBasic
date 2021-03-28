@@ -1,4 +1,4 @@
-package com.shobha.model;
+package com.xmlconfig.model;
 
 public class Speaker {
     private String firstName;

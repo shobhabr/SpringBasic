@@ -1,5 +1,4 @@
-import com.shobha.service.SpeakerService;
-import com.shobha.service.SpeakerServiceImpl;
+import com.javaconfig.service.SpeakerService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
